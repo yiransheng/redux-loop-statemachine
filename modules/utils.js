@@ -19,7 +19,7 @@ export function lookupWithDefault(object, defaultValue, ...path) {
   let value = object;
   for (let prop of path) {
     if(!value) return defaultValue;
-    value = object[prop];
+    value = value[prop];
   }
-  return value;
+  return typeof value === 'undefined' ? defaultValue : value;
 }

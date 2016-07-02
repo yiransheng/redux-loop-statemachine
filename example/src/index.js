@@ -8,7 +8,7 @@ import createReducerFromStateMachine, {TransitionEff}  from './lib';
 
 // state names
 const CLEAR = Symbol('IDLE');
-const DRAWING = Symbol('MOVEGING');
+const DRAWING = Symbol('DRAWING');
 const DRAWN = Symbol('DRAWN'); 
 const MOVE_RECT = Symbol('MOVE_RECT');
 
